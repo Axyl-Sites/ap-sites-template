@@ -1,0 +1,214 @@
+---
+import "/src/styles/timeline.scss";
+---
+
+<div class="swiper-container not-content">
+    <div class="swiper-wrapper timeline">
+        <div class="swiper-slide">
+            <div class="timestamp">
+                <span>Milestone</span>
+            </div>
+            <div class="status completed">
+                <span>
+                    <a
+                        style="text-decoration:none;"
+                        href="https://discord.gg/DBFU4pQEwQ"
+                    >
+                        Get the FOSS Alliance Setup
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="timestamp">
+                <span>Next Significant Milestone</span>
+            </div>
+            <div class="status">
+                <span>
+                    <a
+                        style="text-decoration:none;"
+                        href="https://awfixer.cloud"
+                    >
+                        Get Hosting Configured
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="timestamp">
+                <span>Significant Milestone</span>
+            </div>
+            <div class="status">
+                <span>
+                    <a
+                        style="text-decoration:none;"
+                        href="/en/migrations/hosting"
+                    >
+                        Migrate From Hosted Services
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="timestamp">
+                <span>Significant Milestone</span>
+            </div>
+            <div class="status">
+                <span>
+                    <a
+                        style="text-decoration:none;"
+                        href="https://axylprojects.dev/en/funding/ways-to-help"
+                    >
+                        Acquire all needed funding
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-mobile-container">
+    <ul class="timeline">
+        <li>
+            <div class="direction-r completed">
+                <div class="flag-wrapper">
+                    <span class="flag">
+                        <a
+                            style="text-decoration:none;"
+                            href="https://discord.gg/DBFU4pQEwQ"
+                        >
+                            Get the FOSS Alliance Setup
+                        </a>
+                    </span>
+                    <span class="time-wrapper"
+                        ><span class="time">Milestone</span></span
+                    >
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="flag">
+                        <a
+                            style="text-decoration:none;"
+                            href="https://awfixer.cloud"
+                        >
+                            Get Hosting Configured
+                        </a>
+                    </span>
+                    <span class="time-wrapper"
+                        ><span class="time">Next Significant Milestone</span
+                        ></span
+                    >
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="flag">
+                        <a
+                            style="text-decoration:none;"
+                            href="/en/migrations/hosting"
+                        >
+                            Migrate From Hosted Services
+                        </a>
+                    </span>
+                    <span class="time-wrapper"
+                        ><span class="time">Significant Milestone</span></span
+                    >
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="direction-r">
+                <div class="flag-wrapper">
+                    <span class="flag">
+                        <a
+                            style="text-decoration:none;"
+                            href="https://axylprojects.dev/en/funding/ways-to-help"
+                        >
+                            Acquire all needed funding
+                        </a>
+                    </span>
+                    <span class="time-wrapper"
+                        ><span class="time">Significant Milestone</span></span
+                    >
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<style>
+    :global([data-theme="light"]) .completed span:before {
+        border: 3px solid rgb(245, 199, 61) !important;
+    }
+
+    :global([data-theme="light"]) .timeline:before {
+        background: rgba(52, 56, 65, 0.671) !important;
+        background: -moz-linear-gradient(
+            top,
+            rgba(52, 56, 65, 0) 0%,
+            rgba(52, 56, 65, 0.671) 8%,
+            rgba(52, 56, 65, 0.671) 92%,
+            rgba(52, 56, 65, 0) 100%
+        ) !important;
+        background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0%, rgba(30, 87, 153, 1)),
+            color-stop(100%, rgba(125, 185, 232, 1))
+        ) !important;
+        background: -webkit-linear-gradient(
+            top,
+            rgba(52, 56, 65, 0) 0%,
+            rgba(52, 56, 65, 0.671) 8%,
+            rgba(52, 56, 65, 0.671) 92%,
+            rgba(52, 56, 65, 0) 100%
+        ) !important;
+        background: -o-linear-gradient(
+            top,
+            rgba(52, 56, 65, 0) 0%,
+            rgba(52, 56, 65, 0.671) 8%,
+            rgba(52, 56, 65, 0.671) 92%,
+            rgba(52, 56, 65, 0) 100%
+        ) !important;
+        background: -ms-linear-gradient(
+            top,
+            rgba(52, 56, 65, 0) 0%,
+            rgba(52, 56, 65, 0.671) 8%,
+            rgba(52, 56, 65, 0.671) 92%,
+            rgba(52, 56, 65, 0) 100%
+        ) !important;
+        background: linear-gradient(
+            to bottom,
+            rgba(52, 56, 65, 0) 0%,
+            rgba(52, 56, 65, 0.671) 8%,
+            rgba(52, 56, 65, 0.671) 92%,
+            rgba(52, 56, 65, 0) 100%
+        ) !important;
+    }
+
+    :global([data-theme="light"]) .flag {
+        background: rgb(52, 56, 65) !important;
+        color: rgb(83, 88, 100) !important;
+    }
+
+    :global([data-theme="light"]) .completed .flag:before {
+        border: 3px solid rgb(245, 199, 61) !important;
+    }
+
+    :global([data-theme="dark"]) .completed span a {
+        color: hsl(234, 100%, 87%) !important;
+    }
+
+    :global([data-theme="light"]) .completed span a {
+        color: rgb(245, 199, 61) !important;
+    }
+
+    :global([data-theme="light"]) .flag:after {
+        border-bottom-color: rgb(52, 56, 65) !important;
+    }
+</style>

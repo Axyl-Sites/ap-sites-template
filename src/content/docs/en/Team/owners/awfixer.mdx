@@ -1,0 +1,39 @@
+---
+# src/content/docs/index.mdx
+title: Austin "AWFixer" Ware
+description: Founder, Owner, and BDFL of Axyl Projects
+hero:
+  tagline: |
+    Axyl Projects was created for a new Developing and Working Experience.
+    <div class="roller">
+      <span id="pre_text">Born for</span>
+      <span id="changing_text">Jr Professionals.</span>
+    </div>
+  image:
+    file: /src/assets/gold.png
+  actions:
+    - text: About
+      link: /en/about/axyl-projects/
+      icon: right-arrow
+      variant: primary
+    - text: Our Manifesto
+      link: /en/about/manifesto
+      icon: right-arrow
+    - text: Join Out Community
+      link: https://discord.gg/axyl
+      icon: discord
+---
+
+import "/src/styles/_overrides.scss";
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import ScriptWorkaround from "/src/components/ScriptWorkaround.astro";
+
+  <LinkCard
+  title="About Me"
+  href="https://awfixer.me"
+  description="I am a visionary, as George Carlin put it, always thinking. I am the one who never understood
+  it growing up when they said I thought outside the box, because I didn't know there way a box to keep my thoughts in
+  prolly would have helped me keep them organized though...">
+  </LinkCard>
+
+<ScriptWorkaround />

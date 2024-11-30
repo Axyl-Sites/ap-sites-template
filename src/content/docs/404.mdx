@@ -1,0 +1,49 @@
+---
+title: Not found
+template: splash
+editUrl: false
+hero:
+  title: '404'
+  tagline: <strong>Houston, we have a problem.</strong> We couldn’t find that page.<br>Check the URL or try using the search bar.
+  actions:
+    - text: Go home
+      icon: right-arrow
+      link: /
+      variant: primary
+    - text: Our Team
+      link: /en/team/about-the-team
+      icon: linux
+    - text: Join Discord
+      link: https://discord.gg/axyl
+      icon: discord
+---
+
+import "/src/styles/_overrides.scss";
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+# **Check Out Some of Our Other Projects:**
+
+#### This site is under continious development please report all issues on Discord
+
+<CardGrid stagger>
+  <LinkCard
+      title="Star Project: Helctic"
+      href="https://helctic.dev"
+      description="">
+  </LinkCard>
+  <LinkCard
+      title="Star Projects: Rustfox"
+      href="https://rustfox.dev"
+      description="">
+  </LinkCard>
+  <LinkCard
+      title="Star Projects: AxylOS"
+      href="https://axyl.org"
+      description="">
+  </LinkCard>
+  <LinkCard
+      title="Star Projects: Helsh"
+      href="https://helsh.helctic.dev"
+      description="">
+  </LinkCard>
+  </CardGrid>
